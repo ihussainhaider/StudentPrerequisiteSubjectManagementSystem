@@ -1,10 +1,4 @@
 /*
-	Group Members:		
-	
-	Hussain Haider			30185
-	Muhammad Tayyab Khan	30579
-	Niamt Ullah				30142
-	Syed Shazab Ali Shah	29305
 	
 	project: Student Prerequisite Subject Management System
 
@@ -90,42 +84,6 @@ int main(){
 	int admin=21303;
 	string adminpassword="admin303";
 	
-	string stu[]={"Hussain Haider", "Muhammad Tayyab Khan", "Niamat Ullah", "Syed Shahzab Ali Shah"};
-	string stu_password[]={"185der", "579han", "142lah", "305hah"};
-	
-	int stu_id[]={30185, 30579, 30142, 29305};
-	
-	char grade[]={'A','B','C','D'};
-	
-	srand(time(NULL));
-
-	for(int i=0; i<4; i++){
-		student.addStudent(stu[i], stu_id[i], stu_password[i]);
-	}
-
-	for(int i=0; i<4; i++){
-		student.addCourse(stu_id[i], "csc111", "introduction to Information and Communication Technology", "--");
-		student.addCourse(stu_id[i], "csc101", "Applied Physics", "--");
-		student.addCourse(stu_id[i], "csc102", "Calculas and Analytical Geometry", "--");
-		student.addCourse(stu_id[i], "hum111", "Functional English", "--");
-		student.addCourse(stu_id[i], "hum112", "Personal Development", "--");
-	}
-	
-	for(int i=0; i<4; i++){
-		student.updateCourseData(stu_id[i],"csc111", grade[rand()%4], true);
-		student.updateCourseData(stu_id[i],"csc101", grade[rand()%4], true);
-		student.updateCourseData(stu_id[i],"csc102", grade[rand()%4], true);
-		student.updateCourseData(stu_id[i],"hum111", 'F', false);
-		student.updateCourseData(stu_id[i],"hum112", grade[rand()%4], true);
-	}
-	
-	for(int i=0; i<4; i++){
-		student.addCourse(stu_id[i], "csc121", "Digital Logic Design", "csc101");
-		student.addCourse(stu_id[i], "csc103", "Multivariate Calculus", "csc102");
-		student.addCourse(stu_id[i], "csc131", "Programming Fundamentals", "csc111");
-		student.addCourse(stu_id[i], "hum231", "Communication Skills", "hum111");
-		student.addCourse(stu_id[i], "hum122", "Islamic and Pakistan Studies", "--");
-	}
 	
 	int mainChoice=0, adminChoice=0, adminId=0, studentChoice=0, studentId=0;
 	
